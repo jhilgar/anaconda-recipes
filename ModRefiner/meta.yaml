@@ -1,0 +1,15 @@
+package:
+  name: modrefiner
+  version: 0.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  commands:
+    - ModRefiner-w\emrefinement.exe -h
