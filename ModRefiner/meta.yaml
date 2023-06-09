@@ -12,4 +12,4 @@ requirements:
 
 test:
   commands:
-    - ModRefiner-w\emrefinement.exe -h
+    - ModRefiner-w\emrefinement.exe -h # [win]
