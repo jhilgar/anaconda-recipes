@@ -2,13 +2,13 @@ package:
   name: modrefiner
   version: 0.1
 
-requirements:
-  build:
-    - python
-    - setuptools
-
-  run:
-    - python
+source:
+  url: https://zhanggroup.org/ModRefiner/ModRefiner-w.zip # [win]
+  
+build:
+  number: 0
+  script:
+    - "mkdir %PREFIX%\\bin & move * %PREFIX%\\bin" # [win]
 
 test:
   commands:
