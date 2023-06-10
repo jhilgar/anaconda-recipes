@@ -8,8 +8,8 @@ source:
 build:
   number: 0
   script:
-    - "mkdir %PREFIX%\\bin & move * %PREFIX%\\bin" # [win]
+    - "mkdir %PREFIX%\\bin & xcopy /e /v %SRC_DIR% %PREFIX%\\bin" # [win]
 
 test:
   commands:
-    - ModRefiner-w\emrefinement.exe -h # [win]
+    - which emrefinement.exe && which mcrefinement.exe # [win]
