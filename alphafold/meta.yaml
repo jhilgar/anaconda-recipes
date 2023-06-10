@@ -1,0 +1,15 @@
+package:
+  name: alphafold
+  version: 0.1
+
+source:
+  git: https://github.com/deepmind/alphafold.git
+
+requirements:
+  build:
+    - git
+
+requirements:
+  run:
+    - python
+    - pip
